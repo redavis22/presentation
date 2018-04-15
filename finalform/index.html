@@ -1,3 +1,12 @@
+
+<?php
+$instance_id = @file_get_contents("http://instance-data/latest/meta-data/instance-id");
+?>
+<!--<html>
+<br><br><br><br><br><br>
+<h1><?php echo $instance_id; ?></h1>
+</html> -->
+
 <!DOCTYPE HTML>
 <!--
 	Phantom by HTML5 UP
@@ -22,7 +31,7 @@
 					<header id="header">
 						<div class="inner">
 
-							<!-- Logo 
+							<!-- Logo
 								<a href="index.html" class="logo">
 									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
 								</a>-->
@@ -58,6 +67,7 @@
 								<p>Demonstration of Amazon Translate - AWS Lambda - API Gateway</p>
 								<p>Deliver Results</p>
 <p>Leaders focus on the key inputs for their business and deliver them with the right quality and in a timely fashion. Despite setbacks, they rise to the occasion and never settle.</p>
+<p><?php echo $instance_id; ?></p>
 							</header>
 							<section class="tiles">
 								<article class="style1">
@@ -84,7 +94,7 @@
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/germany.jpg" alt="" />
+										<img src="images/newgermany.png" alt="" />
 									</span>
 									<a href=" https://5vc1lv8aqi.execute-api.us-east-1.amazonaws.com/Stage1/german">
 										<h2>Translate to German</h2>
